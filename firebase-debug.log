@@ -1,0 +1,64 @@
+[debug] [2018-07-17T19:41:33.513Z] ----------------------------------------------------------------------
+[debug] [2018-07-17T19:41:33.516Z] Command:       /Users/andrewsmith/.nvm/versions/node/v8.9.4/bin/node /Users/andrewsmith/.nvm/versions/node/v8.9.4/bin/firebase deploy
+[debug] [2018-07-17T19:41:33.517Z] CLI Version:   3.17.4
+[debug] [2018-07-17T19:41:33.517Z] Platform:      darwin
+[debug] [2018-07-17T19:41:33.517Z] Node Version:  v8.9.4
+[debug] [2018-07-17T19:41:33.517Z] Time:          Tue Jul 17 2018 13:41:33 GMT-0600 (MDT)
+[debug] [2018-07-17T19:41:33.517Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-17T19:41:33.531Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-17T19:41:33.531Z] > authorizing via signed-in user
+[debug] [2018-07-17T19:41:33.533Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-17T19:41:33.533Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/SFJfObs79a0RaeZrBzquwKasDDkxrM1Iy2qOyqaK9Fk',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Jul 17 2018 13:41:33 GMT-0600 (MDT)
+[debug] [2018-07-17T19:41:33.744Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-17T19:41:33.763Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dinos-3-a245e  
+  
+ Tue Jul 17 2018 13:41:33 GMT-0600 (MDT)
+[debug] [2018-07-17T19:41:33.973Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-17T19:41:33.974Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/dinos-3-a245e/tokens  
+  
+ Tue Jul 17 2018 13:41:33 GMT-0600 (MDT)
+[debug] [2018-07-17T19:41:59.587Z] <<< HTTP RESPONSE 400
+[debug] [2018-07-17T19:41:59.587Z] <<< HTTP RESPONSE BODY
+[info] 
+[warn] ⚠  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] ⚠  Please run firebase login --reauth
+[info] 
+[debug] [2018-07-17T19:41:59.592Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-07-17T19:41:59.593Z] > authorizing via signed-in user
+[debug] [2018-07-17T19:41:59.593Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-17T19:41:59.593Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/SFJfObs79a0RaeZrBzquwKasDDkxrM1Iy2qOyqaK9Fk',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Jul 17 2018 13:41:59 GMT-0600 (MDT)
+[debug] [2018-07-17T19:41:59.718Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-17T19:41:59.737Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/dinos-3-a245e  
+  
+ Tue Jul 17 2018 13:41:59 GMT-0600 (MDT)
+[debug] [2018-07-17T19:41:59.874Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-17T19:41:59.875Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/dinos-3-a245e/tokens  
+  
+ Tue Jul 17 2018 13:41:59 GMT-0600 (MDT)
+[debug] [2018-07-17T19:43:00.007Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-17T19:43:00.181Z] Error: Firebase.authWithCustomToken failed: First argument must be a valid credential (a string).
+    at ng (/Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/node_modules/firebase/lib/firebase-node.js:129:313)
+    at X.gg (/Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/node_modules/firebase/lib/firebase-node.js:266:131)
+    at /Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/lib/acquireRefs.js:19:19
+    at initializePromise (/Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:567:5)
+    at new Promise (/Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:1039:33)
+    at /Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/lib/acquireRefs.js:12:12
+    at tryCatch (/Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:525:12)
+    at invokeCallback (/Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:538:13)
+    at publish (/Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:508:7)
+    at flush (/Users/andrewsmith/.nvm/versions/node/v8.9.4/lib/node_modules/firebase-tools/node_modules/rsvp/dist/rsvp.js:2415:5)
+[error] 
+[error] Error: An unexpected error has occurred.
